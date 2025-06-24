@@ -1,3 +1,5 @@
+'use client';
+
 /**
  * This file isn't necessary to understand what is going on with Meet Add-ons.
  * It just gives us something fun to look at while testing the add-on code :)
