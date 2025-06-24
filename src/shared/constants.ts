@@ -21,10 +21,6 @@ export const CLOUD_PROJECT_NUMBER = '109731201886';
 
 export const SITE_BASE = 'https://master.d3jesgto843lwi.amplifyapp.com';
 
-function inDebugMode() {
-  return process.env.NEXT_PUBLIC_DEBUG === '1';
-}
-
 /**
  * @see {@link https://developers.google.com/meet/add-ons/guides/overview#main-stage}
  */
