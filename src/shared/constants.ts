@@ -17,7 +17,7 @@
  * manifest and Google Workspace Marketplace listing.
  * @see {@link https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects}
  */
-export const CLOUD_PROJECT_NUMBER = '109731201886';
+export const CLOUD_PROJECT_NUMBER = process.env.NEXT_PUBLIC_CLOUD_PROJECT_NUMBER || '109731201886';
 
 export const SITE_BASE = inDebugMode()
   ? 'https://localhost:3000/meet/animation-next-js'
