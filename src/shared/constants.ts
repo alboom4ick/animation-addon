@@ -17,7 +17,7 @@
  * manifest and Google Workspace Marketplace listing.
  * @see {@link https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects}
  */
-export const CLOUD_PROJECT_NUMBER = '285788035016';
+export const CLOUD_PROJECT_NUMBER = '109731201886';
 
 export const SITE_BASE = 'https://master.d3jesgto843lwi.amplifyapp.com';
 
