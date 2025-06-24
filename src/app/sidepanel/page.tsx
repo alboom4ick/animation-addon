@@ -33,12 +33,12 @@ export default function Page() {
         document.getElementById('starting-color')! as HTMLInputElement
       ).value;
       await sidePanelClient.startActivity({
-        mainStageUrl: MAIN_STAGE_URL,
-        sidePanelUrl: ACTIVITY_SIDE_PANEL_URL,
+        mainStageUrl: 'https://master.d3jesgto843lwi.amplifyapp.com/mainstage',
+        sidePanelUrl: 'https://master.d3jesgto843lwi.amplifyapp.com/activitysidepanel',
         // Pass the selected color to customize the initial display.
         additionalData: `{\"startingColor\": \"${startingColor}\"}`,
       });
-      window.location.replace(ACTIVITY_SIDE_PANEL_URL + window.location.search);
+      window.location.replace("https://master.d3jesgto843lwi.amplifyapp.com/activitysidepanel" + window.location.search);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start collaboration');
       console.error('Failed to start collaboration:', err);
@@ -54,7 +54,7 @@ export default function Page() {
       try {
         console.log('Initializing with cloud project number:', CLOUD_PROJECT_NUMBER);
         const session = await meet.addon.createAddonSession({
-          cloudProjectNumber: CLOUD_PROJECT_NUMBER,
+          cloudProjectNumber: CLOUD_PROJECT_NUMBER || "109731201886",
         });
         const client = await session.createSidePanelClient();
         setSidePanelClient(client);
