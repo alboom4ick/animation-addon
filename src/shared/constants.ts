@@ -19,9 +19,7 @@
  */
 export const CLOUD_PROJECT_NUMBER = '285788035016';
 
-export const SITE_BASE = inDebugMode()
-  ? 'https://localhost:3000/meet/animation-next-js'
-  : 'https://master.d3jesgto843lwi.amplifyapp.com';
+export const SITE_BASE = 'https://master.d3jesgto843lwi.amplifyapp.com';
 
 function inDebugMode() {
   return process.env.NEXT_PUBLIC_DEBUG === '1';
